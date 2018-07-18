@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/secondaryProgress">
+        <shape
+            android:innerRadiusRatio="4"
+            android:shape="ring"
+            android:thicknessRatio="12.0"
+            android:useLevel="true">
+
+
+            <gradient
+                android:centerColor="#c8b00000"
+                android:endColor="#c8ff0000"
+                android:startColor="#c8ff0000"
+                android:type="sweep" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <rotate
+            android:fromDegrees="270"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="270">
+
+            <shape
+                android:innerRadiusRatio="4"
+                android:shape="ring"
+                android:thicknessRatio="10.0"
+                android:useLevel="true">
+
+
+                <rotate
+                    android:fromDegrees="0"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="360" />
+
+                <gradient
+                    android:centerColor="#c83bd3bc"
+                    android:endColor="#c800ff00"
+                    android:startColor="#c800ff00"
+                    android:type="sweep" />
+
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
+
+    <!--
+
+    <rotate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fromDegrees="-90"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="270" >
+
+        <shape
+            android:shape="ring"
+            android:thickness="8dp"
+            android:useLevel="false" >
+            <gradient
+                android:centerY="0.5"
+                android:endColor="#184554"
+                android:startColor="#3bc0d3"
+                android:type="sweep"
+                android:useLevel="true" />
+        </shape>
+
+    </rotate>
+
+    <?xml version="1.0" encoding="utf-8"?>
+
+
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/secondaryProgress">
+        <shape
+            android:innerRadiusRatio="6"
+            android:shape="ring"
+            android:thicknessRatio="20.0"
+            android:useLevel="true">
+
+
+            <gradient
+                android:centerColor="#999999"
+                android:endColor="#999999"
+                android:startColor="#999999"
+                android:type="sweep" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <rotate
+            android:fromDegrees="270"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="270">
+
+            <shape
+                android:innerRadiusRatio="6"
+                android:shape="ring"
+                android:thicknessRatio="20.0"
+                android:useLevel="true">
+
+
+                <rotate
+                    android:fromDegrees="0"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="360" />
+
+                <gradient
+                    android:centerColor="#00FF00"
+                    android:endColor="#00FF00"
+                    android:startColor="#00FF00"
+                    android:type="sweep" />
+
+            </shape>
+        </rotate>
+    </item>
+    </layer-list>
+
+    -->

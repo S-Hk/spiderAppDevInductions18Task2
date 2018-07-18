@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartMenuActivity"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+
+        android:text="HANGMAN"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        android:textSize="50sp" />
+    <TextView
+        android:id="@+id/textViewHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:text="High Score: 0"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/scoreHighText"
+        android:textSize="20sp"/>
+
+    <ImageButton
+        android:id="@+id/buttonStartGame"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+
+        android:background="@drawable/play_button" />
+
+
+
+
+</RelativeLayout>

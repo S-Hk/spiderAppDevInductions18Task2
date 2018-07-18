@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/wordView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+
+            android:text="HANGMAN"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editTextGuess"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="112dp"
+            android:ems="10"
+            android:hint="Guess Letter"
+            android:inputType="textCapCharacters"
+            android:maxLength="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorText" />
+
+
+        <Button
+            android:id="@+id/checkGuess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextGuess"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@color/itemButton"
+            android:text="Check Guess"
+            android:textColor="@color/colorText" />
+
+        <ListView
+            android:id="@+id/letterList"
+            android:layout_width="50dp"
+            android:layout_height="249dp"
+            android:layout_below="@+id/checkGuess"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@color/listBackground"
+            android:clickable="false"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textViewHighScoreM"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkGuess"
+            android:layout_alignTop="@id/letterList"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="90dp"
+            android:text="High Score: 0"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"/>
+
+        <TextView
+            android:id="@+id/textViewCurrentScore"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/textViewHighScoreM"
+            android:layout_marginTop="50dp"
+            android:layout_alignStart="@+id/textViewHighScoreM"
+            android:text="Current Score: 0"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"/>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/textViewHighScoreM"
+            android:layout_alignStart="@id/textViewWrongGuess"
+            android:layout_marginStart="10dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progressbar_drawable"
+            android:secondaryProgress="0" />
+
+
+
+        <TextView
+            android:id="@+id/textViewWrongGuess"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/progressBar"
+            android:text="Wrong Guess: 0/10"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+

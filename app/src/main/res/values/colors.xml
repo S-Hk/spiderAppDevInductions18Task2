@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#184554</color>
+    <color name="colorPrimaryDark">#041A1E</color>
+    <color name="colorAccent">#256C76</color>
+    <color name="colorText">#92CCD4</color>
+    <color name="listBackground">#230d5d6c</color>
+    <color name="itemButton">#7b428692</color>
+    <color name="scoreHighText">#3bc0d3</color>
+    <color name="background_material_light">#1a4248</color>
+    <color name="foreground_material_light">#92ccd4</color>
+    <color name="primary_text_default_material_dark">#92ccd4</color>
+    <color name="text_color_primary">#7dafb7</color>
+
+</resources>
